@@ -1,4 +1,6 @@
-const { Schema, model } = require('mongoose');
+const mongoose = require('mongoose');
+
+const { Schema } = mongoose;
 
 const moodSchema = new Schema({
     type: {
@@ -16,4 +18,6 @@ const moodSchema = new Schema({
     }
 });
 
-module.exports = moodSchema;
+const Mood = mongoose.model('Mood', moodSchema);
+
+module.exports = Mood;

@@ -1,12 +1,16 @@
-const { Schema, model } = require('mongoose');
-const mealSchema = require("./Meal");
-const exerciseSchema = require("./Exercise");
-const moodSchema = require("./Mood")
+const mongoose = require('mongoose');
+
+const { Schema } = mongoose;
+const Meal = require("./Meal");
+const Exercise = require("./Exercise");
+const Mood = require("./Mood")
 
 const logSchema = new Schema({
-  meals: [mealSchema],
-  exercises: [exerciseSchema],
-  moods: [moodSchema]
+  meals: [Meal],
+  exercises: [Exercise],
+  moods: [Mood]
 });
 
-module.exports = logSchema;
+const Log = mongoose.model('Log', logSchema);
+
+module.exports = Log;
