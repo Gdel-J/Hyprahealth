@@ -1,7 +1,9 @@
 const User = require('./User');
-const Log = require("./Log")
-const Meal = require("./Meal")
-const Exercise = require("./Exercise")
-const Mood = require("./Mood")
+const Post = require('./Post');
+const Comment = require('./Comment');
+const Recipe = require('./Recipe');
+const Order = require('./Order');
+const Product = require('./Product');
+const Category = require('./Category');
 
-module.exports = {User, Log, Meal, Exercise, Mood};
+module.exports = { User, Post, Comment, Recipe, Order, Product, Category };

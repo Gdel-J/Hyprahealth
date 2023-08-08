@@ -1,0 +1,52 @@
+[
+  {
+    "username": "ChuckNorrified",
+    "email": "chuck@funnydomain.com",
+    "password": "Pass01a"
+  },
+  {
+    "username": "QuackTheDuck",
+    "email": "quack@duckpond.net",
+    "password": "Pass02b"
+  },
+  {
+    "username": "TofuVampire",
+    "email": "no_blood@tofulife.org",
+    "password": "Pass03c"
+  },
+  {
+    "username": "SpaghettiYeti",
+    "email": "noodlymonster@yetiland.com",
+    "password": "Pass04d"
+  },
+  {
+    "username": "PickleRickRoll",
+    "email": "nevergonna@letyoudown.net",
+    "password": "Pass05e"
+  },
+  {
+    "username": "DiscoYeti",
+    "email": "yeti@boogiewonderland.com",
+    "password": "Pass06f"
+  },
+  {
+    "username": "PandaManda",
+    "email": "fluffybamboo@pandaland.org",
+    "password": "Pass07g"
+  },
+  {
+    "username": "BananaDramaLlama",
+    "email": "fruitylama@dramaqueen.net",
+    "password": "Pass08h"
+  },
+  {
+    "username": "NotARobot",
+    "email": "definitelyhuman@humanland.com",
+    "password": "Pass09i"
+  },
+  {
+    "username": "CoffeeOtter",
+    "email": "buzzedotter@rivercafe.net",
+    "password": "Pass10j"
+  }
+]
