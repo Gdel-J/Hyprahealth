@@ -54,10 +54,11 @@ Embark on a holistic journey towards optimal health with our calorie tracer, mea
 ## Screenshots
 📸
 
-![Alt text]()
-![Alt text]()
-![Alt text]()
-![Alt text]()
+![Alt text](./images/Screenshot.png)
+
+![Alt text](./images/Screenshot2.png)
+
+![Alt text](<images/Screenshot 3.png>)
 
 ## Technologies Used
 ✅
@@ -77,9 +78,9 @@ Embark on a holistic journey towards optimal health with our calorie tracer, mea
 💾
 
 1. Pull down and/or branch this repository
-2. 
-3. 
-4. 
+2. In Terminal run npm i
+3. Then npm run deploy
+
 
 
 ## Usage Information
@@ -146,5 +147,10 @@ Have additional questions? Click the links below to reach me through my GitHub a
 
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 
-<a href="mailto:grizzlylbc1@gmail.com">grizzlylbc1@gmail.com</a>
+<a href="mailto:grizzlylbc1@gmail.com">Richard Murillo Email</a>
 
+<a href="mailto:alvinjoyner3@gmail.com">Alvin Joyner Email</a>
+
+<a href="mailto:">Jesse Elkins Email</a>
+
+<a href="mailto:jessygdelvecchio@gmail.com">Gerard Del Vecchio Email</a>
