@@ -6,6 +6,7 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import { onError } from "@apollo/client/link/error";  // <-- Import for error handling
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Importing the individual page components and other utilities/components.
@@ -22,9 +23,10 @@ import Success from './pages/Congratulations';
 
 import { RecipeProvider } from './utils/GlobalState';
 
-// Set up a connection to the GraphQL API server.
+const SERVER_URI = process.env.REACT_APP_GRAPHQL_SERVER_URI || 'http://localhost:3001/graphql';
+
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri: SERVER_URI,
 });
 
 // Middleware to authenticate requests by attaching a JWT token.
@@ -40,9 +42,23 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
-// Initialize the Apollo client with the specified link (httpLink with authLink) and cache implementations.
+// Error handling for Apollo Client
+const errorLink = onError(({ graphQLErrors, networkError }) => {
+  if (graphQLErrors) {
+    graphQLErrors.forEach(({ message, locations, path }) =>
+      console.log(
+        `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`
+      )
+    );
+  }
+  if (networkError) {
+    console.log(`[Network error]: ${networkError}`);
+  }
+});
+
+// Initialize the Apollo client with the specified link (errorLink, authLink, and httpLink in sequence) and cache implementations.
 const client = new ApolloClient({
-  link: authLink.concat(httpLink),
+  link: errorLink.concat(authLink).concat(httpLink),  // <-- Updated to include error handling
   cache: new InMemoryCache(),
 });
 

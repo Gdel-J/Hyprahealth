@@ -3,6 +3,8 @@ const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
 const { authMiddleware } = require("./utils/auth");
+const cors = require('cors');
+
 
 // Import other type definitions and resolvers as needed
 const { typeDefs, resolvers } = require("./schemas");
@@ -19,15 +21,20 @@ const server = new ApolloServer({
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+// This will allow any domain to make requests. 
+// You might want to restrict this in production using corsOptions as described previously.
+app.use(cors());
+
 
 // Serve up static assets
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
 }
 
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
+
 
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async () => {
