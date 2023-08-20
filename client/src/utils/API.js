@@ -1,5 +1,5 @@
 
-const ApiKey=process.env.REACT_APP_THE_MEAL_DB_API_KEY;
+const ApiKey=process.env.REACT_APP_API_KEY;
 
 
 export const searchRecipes = (query) => {
