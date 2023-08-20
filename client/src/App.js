@@ -24,7 +24,10 @@ import Success from './pages/Congratulations';
 import { RecipeProvider } from './utils/GlobalState';
 
 
-const SERVER_URI ='http://localhost:3001/graphql' || process.env.REACT_APP_GRAPHQL_ENDPOINT ;
+const SERVER_URI = process.env.NODE_ENV === "production" 
+  ? process.env.REACT_APP_GRAPHQL_ENDPOINT 
+  : 'http://localhost:3001/graphql';
+
 
 const httpLink = createHttpLink({
   uri: SERVER_URI
