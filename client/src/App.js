@@ -24,11 +24,12 @@ import Success from './pages/Congratulations';
 import { RecipeProvider } from './utils/GlobalState';
 
 
-const SERVER_URI = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:3001/graphql';
+const SERVER_URI ='http://localhost:3001/graphql' || process.env.REACT_APP_GRAPHQL_ENDPOINT ;
 
 const httpLink = createHttpLink({
-  uri: SERVER_URI,
+  uri: SERVER_URI
 });
+
 
 // Middleware to authenticate requests by attaching a JWT token.
 const authLink = setContext((_, { headers }) => {
