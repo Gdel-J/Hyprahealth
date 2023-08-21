@@ -5,7 +5,7 @@ import { searchRecipes } from "../utils/API";
 import SearchResult from "../components/SearchResult";
 
 const Container = styled.div`
-    width: 100%;
+    width: 90%;
     padding: 20px;
 `;
 
@@ -14,6 +14,7 @@ const SearchContainer = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
+    
 `;
 
 const SearchInput = styled.input`

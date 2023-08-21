@@ -19,7 +19,7 @@ const LoginForm = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 300px; // adjust to your preference
+  width: 300px; 
 `;
 
 const Card = styled.div`
@@ -27,7 +27,7 @@ const Card = styled.div`
 `;
 
 const CardHeader = styled.h4`
-  background-color: #FFD2CC;
+  background-color: #1565C0;
   text-align: center;
   padding: 15px;
 `;
@@ -37,7 +37,7 @@ const CardBody = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 9px 25px 25px 25px;
-  background-color: #FFD2CC;
+  background-color: #1565C0;
 `;
 
 const StyledForm = styled.form`
@@ -45,11 +45,11 @@ const StyledForm = styled.form`
   background-color: white;
   padding: 4%;
   border-radius: 4px;
-  width: 100%;
+  width: 90%;
 `;
 
 const Input = styled.input`
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;

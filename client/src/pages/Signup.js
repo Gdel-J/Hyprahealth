@@ -17,7 +17,7 @@ const SignupFormContainer = styled.div`
     }
 
     .card-header {
-        background-color: #FFD2CC;
+        background-color: #1565C0;
     }
 
     .card-body {
@@ -26,7 +26,7 @@ const SignupFormContainer = styled.div`
         justify-content: center;
         margin: 0 auto;
         padding: 9px 25px 25px 25px;
-        background-color: #FFD2CC;
+        background-color: #1565C0;
     }
 
     form {

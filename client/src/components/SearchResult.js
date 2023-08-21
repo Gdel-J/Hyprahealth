@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const RecipeResultsContainer = styled.div`
   padding: 1rem;
-  background-color: #f8f9fa;
+  background-color: #add8e6; // light blue;
   min-height: 100vh;
 `;
 
