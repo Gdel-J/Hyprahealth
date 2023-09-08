@@ -6,30 +6,23 @@
 
 ## Table of Contents
 
-* [Our-Story](#our-story)
-
- * [Description](#description)
-
- * [Live-URL](#live-url)
-
- * [Screenshots](#screenshots)
-
- * [Technologies-Used](#technologies-used)
-
- * [Installation](#installation)
-
- * [Usage-Information](#usage-information)
-
- * [Contributions](#contributions)
-
- * [Basic-Acceptance-Criteria](#basic-acceptance-criteria)
-
- * [License](#license)
-
- * [Questions](#questions)
+- [Healthy-Journal (Group6)](#healthy-journal-group6)
+  - [Table of Contents](#table-of-contents)
+  - [Our Story](#our-story)
+  - [Description](#description)
+  - [Live URL](#live-url)
+  - [Screenshots](#screenshots)
+  - [Technologies Used](#technologies-used)
+  - [Installation](#installation)
+  - [Usage Information](#usage-information)
+  - [Contributions](#contributions)
+  - [Basic Acceptance Criteria](#basic-acceptance-criteria)
+  - [License](#license)
+  - [Questions](#questions)
 
  ## Our Story
  We decided on a health tracking website developed by our four dedicated individuals. We wanted a website to assist people who are beginning their healthy life journey to have an intuitive page and app to calculate their daily caloric intake, look for fantastic and healthy foods, and set up an exercise all on one page.
+ Finally the application is a receipe finder app, with videos help to cook your delicious food.
 
 ## Description
 👩🏻‍💻
@@ -45,8 +38,9 @@ Discover the art of balanced living with our comprehensive tools designed to emp
 Embark on a holistic journey towards optimal health with our calorie tracer, meal prep guidance, and exercise finder. Your well-being is our priority, and we're here to support you every step of the way. Let's create a vibrant, energized, and healthier version of you, together!"
 
 ## Live URL
-📼
 
+📼
+https://hyprahealthy-a6122d6a4506.herokuapp.com/
 
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 
